@@ -19,6 +19,7 @@ function setCurrentSize(newSize) {
   currentSize = newSize
 }
 
+// Buttons
 const colorPicker = document.getElementById('colorPicker')
 const colorBtn = document.getElementById('colorBtn')
 const rainbowBtn = document.getElementById('rainbowBtn')
@@ -28,6 +29,7 @@ const sizeValue = document.getElementById('sizeValue')
 const sizeSlider = document.getElementById('sizeSlider')
 const grid = document.getElementById('grid')
 
+// Color Picker
 colorPicker.oninput = (e) => setCurrentColor(e.target.value)
 colorBtn.onclick = () => setCurrentMode('color')
 rainbowBtn.onclick = () => setCurrentMode('rainbow')
@@ -36,6 +38,7 @@ clearBtn.onclick = () => reloadGrid()
 sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value)
 sizeSlider.onchange = (e) => changeSize(e.target.value)
 
+// Mouse Draw
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
