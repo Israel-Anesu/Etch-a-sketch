@@ -19,7 +19,7 @@ function setCurrentSize(newSize) {
   currentSize = newSize
 }
 
-// Buttons
+// Sketch Buttons
 const colorPicker = document.getElementById('colorPicker')
 const colorBtn = document.getElementById('colorBtn')
 const rainbowBtn = document.getElementById('rainbowBtn')
@@ -29,7 +29,7 @@ const sizeValue = document.getElementById('sizeValue')
 const sizeSlider = document.getElementById('sizeSlider')
 const grid = document.getElementById('grid')
 
-// Color Picker
+// Color Selector
 colorPicker.oninput = (e) => setCurrentColor(e.target.value)
 colorBtn.onclick = () => setCurrentMode('color')
 rainbowBtn.onclick = () => setCurrentMode('rainbow')
